@@ -3,9 +3,11 @@ import Layout from "../layouts/Layout.astro";
 import Showcase from "../components/Showcase.astro"
 import Features from "../components/Features.astro"
 import Tabs from "../components/Tabs.astro"
+import Footer from "../components/Footer.astro";
 ---
 <Layout>
 	<Showcase showExtra={true}/>
 	<Features />
-	<Tabs />
+	<Tabs headings={['NPM', 'PNPM', 'YARN']} contents={['$ npm create astro@latest', '$ PNPM create astro@latest', '$ YARN create stro']} activeTextColor="blue"/>
+	<Footer />
 </Layout>
